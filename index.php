@@ -25,11 +25,11 @@
                 </div>
             </div>
             <p>or</p>
-            <form class="inputs-container">
-                <input class="input" type="text" placeholder="Usuario">
-                <input class="input" type="password" placeholder="pass">
+            <form class="inputs-container" action="Modelo.php" method="POST">
+                <input class="input" type="text" name="usuario" placeholder="Usuario" required>
+                <input class="input" type="password" name="pass" placeholder="pass" required>
                 <p>Forget password? <span class="span">click here</span></p>
-                <button class="btn"> Login</button>
+                <button class="btn" type="submit"> Login</button>
                 <p>No tienes una cuenta<span class="span">Click Here</span></p>
             </form>
         </div>
