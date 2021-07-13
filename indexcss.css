@@ -1,0 +1,159 @@
+body{
+    width: 100%;
+    
+    background: -webkit-linear-gradient(to right, hsla(340,95%,50%,0.500), rgba(94, 14, 241, 0.6)),url();
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(340,95%,50%,0.500), rgba(94,14,241,0.6)),url();
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+}
+:root{
+    --login-bg: #f8f3ff;
+    --title-bg: #9089cc;
+    --button-bg: #674baf;
+    --light-pink: #e882e8;
+    --image-bg: #eadbff;
+}
+
+.contenedor{
+    height: 40.75em;
+    width: 50em;
+    margin: 6em auto;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.info-login{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 1px solid solid;
+    padding-top: 0.5rem;
+    background-color: var(--login-bg);
+
+}
+.imagenD{
+    width: 50%;
+    padding: 2rem;
+    background-color: var(--image-bg);
+    box-sizing: border-box;
+}
+.titulo{
+    text-transform: capitalize;
+    font-size: 2.25rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: var(--title-bg);
+}
+.social-login{
+    width: 100%;
+    display: flex;
+    
+    justify-content: space-evenly;
+}
+.social-login-elementos{
+    border-radius: 5px;
+    border: 1px solid var(--button-bg);
+    width: 10.5rem;
+    height: 3.78rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social-login-elementos img{
+    width: 1.875rem;
+    height: 1.875rem;
+    position: relative;
+    top: 0;
+    left: -0.625rem;
+}
+.social-login-elementos:hover{
+    background-color: #fff;
+    cursor: pointer;
+}
+.info-login > p{
+    font-size: 1.25em;
+    margin-top: 1.5em;
+}
+.inputs-container{
+    
+    height: 55%;
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.input, .btn{
+    width: 90%;
+    height: 3.125rem;
+    font-size: 1em;
+}
+.input{
+    padding-left: 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    box-sizing: border-box;
+}
+.input:hover{
+    border: 2px solid var(--button-bg);
+}
+.btn{
+    width: 80%;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 5px;
+    background-color: var(--button-bg);
+    cursor: pointer;
+}
+.inputs-container{
+    margin: 0;
+}
+.span{
+    color: var(--light-pink);
+    font-weight: 600;
+    cursor: pointer;
+}
+@media screen and (max-width: 1000px) {
+    .imagenD{
+        display: none;
+    }
+    .contenedor{
+        border: 2px solid silver;
+        width: 70%;
+        margin-top: 3rem;
+    }
+    .info-login{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 650px) {
+    .contenedor{
+        width: 90%;
+    }
+}
+@media screen and (max-width: 500px) {
+    .contenedor{
+        height: 90%;
+    }
+    .social-login{
+        flex-direction: column;
+        align-items: center;
+        height: 30%;
+    }
+    .info-login > p{
+        margin: 0;
+
+    }
+}
